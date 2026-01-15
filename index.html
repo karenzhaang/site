@@ -2,24 +2,61 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title> Website</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Modern Website</title>
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+
+  <!-- CSS -->
   <link rel="stylesheet" href="style.css">
+
+  <!-- Particles.js library -->
+  <script src="particles.min.js"></script>
 </head>
 <body>
+
+  <!-- Particle Background -->
+  <div id="particles-js"></div>
+
+  <!-- Header -->
   <header>
-    <h1>Website!</h1>
-    <nav>
-      <a href="index.html">Home</a>
-      <a href="about.html">About</a>
-      <a href="contact.html">Contact</a>
+    <h1 class="fade-in">Welcome to My Modern Website</h1>
+    <nav class="fade-in">
+      <a href="#about">About</a>
+      <a href="#projects">Projects</a>
+      <a href="#contact">Contact</a>
     </nav>
   </header>
+
+  <!-- Main Content -->
   <main>
-    <h2>Hello!</h2>
-    <p> HI </p>
+    <section id="about" class="slide-in">
+      <h2>About Me</h2>
+      <p>I create interactive, modern websites with animations, motion graphics, and creative designs.</p>
+    </section>
+
+    <section id="projects" class="slide-in">
+      <h2>Projects</h2>
+      <div class="carousel">
+        <img src="images/photo1.jpg" class="carousel-img active">
+        <img src="images/photo2.jpg" class="carousel-img">
+        <img src="images/photo3.jpg" class="carousel-img">
+      </div>
+    </section>
+
+    <section id="contact" class="slide-in">
+      <h2>Contact Me</h2>
+      <p>Email: yourname@example.com</p>
+      <p>GitHub: <a href="https://github.com/yourusername">github.com/yourusername</a></p>
+    </section>
   </main>
+
   <footer>
-    <p>&copy;HI </p>
+    <p>&copy; 2026 My Name</p>
   </footer>
+
+  <!-- JS -->
+  <script src="script.js"></script>
 </body>
 </html>
